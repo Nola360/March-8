@@ -6,77 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fly Out Navigation Bar</title>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="nav">
-
-    <div class="nav-item">
-      <div class="main-item">
-        <i class="fa fa-plus"></i>
-        <span>New</span>
-      </div>
-
-      <div class="sub-items">
-        <div class="sub-item">
-          <i class="far fa-file"></i>
-          <span>File</span>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-item">
+        <div class="main-item">
+          <i class="fa fa-plus"></i>
+          <span>New</span>
         </div>
-        <div class="sub-item">
-          <i class="far fa-folder"></i>
-          <span>Folder</span>
+
+        <div class="sub-items">
+          <div class="sub-item">
+            <i class="far fa-file"></i>
+            <span>File</span>
+          </div>
+          <div class="sub-item">
+            <i class="far fa-folder"></i>
+            <span>Folder</span>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="main-item">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </div>
+
+        <div class="sub-items">
+          <div class="sub-item">
+            <i class="far fa-edit"></i>
+            <span>Update</span>
+          </div>
+          <div class="sub-item">
+            <i class="far fa-moon"></i>
+            <span>Theme</span>
+          </div>
+          <div class="sub-item">
+            <i class="fa fa-power-off"></i>
+            <span>Logout</span>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="main-item">
+          <i class="fa fa-share-alt"></i>
+          <span>Share</span>
+        </div>
+        <div class="sub-items">
+          <div class="sub-item">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </div>
+          <div class="sub-item">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </div>
+          <div class="sub-item">
+            <i class="fab fa-pinterest"></i>
+            <span>Pintrest</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="nav-item">
-      <div class="main-item">
-        <i class="fa fa-cog"></i>
-        <span>Settings</span>
-      </div>
-
-      <div class="sub-items">
-        <div class="sub-item">
-          <i class="far fa-edit"></i>
-          <span>Update</span>
-        </div>
-        <div class="sub-item">
-          <i class="far fa-moon"></i>
-          <span>Theme</span>
-        </div>
-        <div class="sub-item">
-          <i class="fa fa-power-off"></i>
-          <span>Logout</span>
-        </div>
-      </div>
-    </div>
-    <div class="nav-item">
-      <div class="main-item">
-        <i class="fa fa-share-alt"></i>
-        <span>Share</span>
-      </div>
-      <div class="sub-items">
-        <div class="sub-item">
-          <i class="fab fa-facebook-f"></i>
-          <span>Facebook</span>
-        </div>
-        <div class="sub-item">
-          <i class="fab fa-twitter"></i>
-          <span>Twitter</span>
-        </div>
-        <div class="sub-item">
-          <i class="fab fa-pinterest"></i>
-          <span>Pintrest</span>
-        </div>
-      </div>
-    </div>
 
 
-
+    <h1>Fly Out Navigation Bar</h1>
+    <div class='open'>&#9776;</div>
 
   </div>
 
 
 
+
+
+
+
 </body>
+
+<script>
+
+  const button = document.querySelector('.open');
+  const navbar = document.querySelector('.nav');
+
+  button.addEventListener('click', function (open) {
+    navbar.classList.toggle('active');
+  })
+</script>
 
 </html>
