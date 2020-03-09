@@ -89,7 +89,6 @@ h1 {
   text-align: center;
   background: #00acee;
   color: white;
-  /* margin-top: 20px; */
 }
 
 .open {
@@ -97,7 +96,6 @@ h1 {
   background: #222;
   color: white;
   padding: 0px 15px;
-  /* margin: 10px; */
   border-radius: 16px;
   cursor: pointer;
 }
